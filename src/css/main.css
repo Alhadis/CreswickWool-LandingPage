@@ -1,0 +1,97 @@
+
+/** Header suspended above white background */
+#top{
+	margin: 7em 1em 1.5em;
+	position: relative;
+	height: 0;
+}
+	#top > .r{
+		position: absolute;
+		bottom: 100%;
+		margin-bottom: inherit;
+	}
+
+	#top > .weibo{
+		right: 0;
+	}
+
+
+
+/** Introductory preamble text */
+#preamble{
+	background: no-repeat 100% 100% url("../img/alpaca.jpg");
+	text-align: center;
+	padding-bottom: 3em;
+}
+	/** Banner image */
+	#preamble::before{
+		content: "";
+		display: block;
+		margin-bottom: 3em;
+		padding-top: 42%;
+		background: no-repeat 50% 100% url("../img/banner.jpg");
+		-webkit-background-size:	100% auto;
+		-khtml-background-size:		100% auto;
+		-moz-background-size:		100% auto;
+		-ms-background-size:		100% auto;
+		-o-background-size:			100% auto;
+		background-size:			100% auto;
+	}
+	
+	#preamble > p{
+		max-width: 36.25em;
+		margin: 1em auto;
+	}
+
+
+/** Products */
+.product-name{
+	background: #e8e6e6;
+	text-align: center;
+}
+	.product-image img{
+		max-width: 100%;
+	}
+
+#more-info{
+	background: #ebebeb;
+}
+
+
+
+
+
+
+/*=============================================================================*
+	1. SMARTPHONES (< 600)
+===============================================================================*/
+@media not all and (min-width: 37.5em){
+#top{
+	font-size: .8em;
+}
+}
+
+
+/*=============================================================================*
+	1.5 TWEAKPOINT: Narrow Smartphones (< 344)
+===============================================================================*/
+@media (max-width: 21.5em){
+#top{
+	font-size: .7em;
+}
+}
+
+
+/*=============================================================================*
+	2. TABLETS (600+)
+===============================================================================*/
+@media (min-width: 37.5em){
+
+#top{
+	margin-top: 8em;
+	margin-bottom: 2em;
+}
+	#preamble::before{
+		background-image: url("../img/banner@2x.jpg");
+	}	
+}
