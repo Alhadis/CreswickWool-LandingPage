@@ -1,7 +1,7 @@
 
 /** Header suspended above white background */
 #top{
-	margin: 7em 1em 1.5em;
+	margin: 7em 0 1.5em;
 	position: relative;
 	height: 0;
 }
@@ -22,6 +22,7 @@
 	background: no-repeat 100% 100% url("../img/alpaca.jpg");
 	text-align: center;
 	padding-bottom: 3em;
+	margin: 0 -2em;
 }
 	/** Banner image */
 	#preamble::before{
@@ -44,22 +45,243 @@
 	}
 
 
+
+
 /** Products */
-.product-name{
-	background: #e8e6e6;
-	text-align: center;
+#products{
+	
 }
-	.product-image img{
-		max-width: 100%;
+	/** Grey bar holding product's name */
+	.product-name{
+		background: #e8e6e6;
+		text-align: center;
+		margin: 0 -32px;
+		margin: 0 -2rem;
 	}
+
+
+	/** Photograph of packaged product */
+	.product-image{
+		margin: 1em;
+	}
+		/** Strip the vertical spacing from product photos already suspended against white backgrounds. */
+		#pure-regal-alpaca-quilt .product-image{
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		.product-image img{
+			max-width: 25em;
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+
+
+	/** Price/discount info */
+	.product-price{
+		background: #dc2e22;
+		color: #fff;
+		text-align: center;
+		padding: .6em;
+		font-size: 1.25em;
+		text-transform: uppercase;
+		margin: 0 -2rem 1em; 
+	}
+		/** Marked-down price */
+		.faded{
+			color: #dfdcdc;
+		}
+
+		.product-price p{
+			margin: 0;
+		}
+
+
+
+
+	/** Extended information about the product (flavour text, features, sizing specs, etc). */
+	.product-description{
+	}
+		/** Bullet points */
+		.product-description ul{
+			margin: 0;
+			padding-left: 1.25em;
+		}
+
+
+		.product-description dl,
+		.product-description dl > *{
+			display: inline;
+			padding: 0;
+			margin: 0;
+			padding-right: .5em;
+		}
+			.product-description dd::after{
+				content: "";
+				display: block;
+			}
+
+
+		/** Sizing specifications table */
+		.sizing-guide{
+			margin-top: 1.5em;
+		}
+			.sizing-guide > p{
+				margin-top: .35em;
+			}
+
+
+
+
+
 
 #more-info{
 	background: #ebebeb;
+	padding: 2em;
+	padding-bottom: 1em;
+	margin: 0 -2em;
 }
+	#more-info h2{
+		padding: 0;
+	}
+
+	#about{
+		border-bottom: 1px solid #605f5f;
+		margin-bottom: 1em;
+	}
+		/** Contact Details */
+		.contact-number,
+		.contact-email{
+			display: block;
+		}
 
 
+/** Assorted, eye-catching points of interest. */
+#bottom{
+	margin: 1em -1em;
+	padding: 0 1em;
+	border: 1px solid #f5f5f5;
+}
+	/** One of three grey-shaded columns in page's footer. */
+	#bottom > *{
+		position: relative;
+		background: #f7f7f7;
+		min-height: 3.5em;
+		margin: 1em 0;
+		padding: 1.5em 1em 1.5em 4.5em;
+		text-align: center;
+		text-transform: uppercase;
+		white-space: nowrap;
+		font-size: 1.125em;
+		color: #000;
+		
+		-webkit-border-radius:	.35em;
+		-moz-border-radius:		.35em;
+		border-radius:			.35em;
+	}
+		#bottom span{
+			display: inline-block;
+			vertical-align: middle;
+			white-space: normal;
+		}
+			#bottom small{
+				text-transform: none;
+				display: block;
+				font-size: .6em;
+			}
+
+		/** Round single-colour icon displayed beside block's label. */
+		#bottom > *::before{
+			content: "";
+			position: absolute;
+			left:	0;
+			top:	50%;
+			width:	1em;
+			height:	1em;
+			font-size: 3.125em;
+			margin:	-.5em 0 0 .25em;
+	
+			-webkit-border-radius:	50%;
+			-moz-border-radius:		50%;
+			border-radius:			50%;
+			
+			background: #fff no-repeat 50% 50%;
+			-webkit-background-size:	100%;
+			-khtml-background-size:		100%;
+			-moz-background-size:		100%;
+			-ms-background-size:		100%;
+			-o-background-size:			100%;
+			background-size:			100%;
+		}
+
+		/** Vertical alignment aide */
+		#bottom > *::after{
+			content: "";
+			display: inline-block;
+			vertical-align: middle;
+			height:	100%;
+			width:	0;
+		}
+
+	
+	/** 1. Secure Shopping */
+	#secure-shopping::before{
+		background-image: url("../img/icon-padlock@2x.png");
+	}
+
+	/** 2. Full Website */
+	#full-website{
+		display: block;
+	}
+		#full-website:hover{
+			text-decoration: none;
+		}
+		#full-website:hover > small{
+			text-decoration: underline;
+		}
+		#full-website::before{
+			background-image: url("../img/icon-screen@2x.png");
+		}
+
+	/** 3. Natural Fibres */
+	#natural-fibres::before{
+		background-image: url("../img/icon-fibres@2x.png");
+		background-color: transparent;
+	}
 
 
+/** Subscription form */
+#keep-in-touch{
+	border: 1px solid #ededed;
+	text-align: center;
+	position: relative;
+	margin-top: 2em;
+}
+	#keep-in-touch > h2{
+		top: -.85em;
+		display: inline-block;
+		position: relative;
+		background: #fff;
+		color: #000;
+		padding: .25em 1em;
+		margin-bottom: -.85em;
+	}
+
+	#keep-in-touch > p{
+		margin-top: 0;
+		font-size: .9em;
+	}
+
+	#subscription-form{
+		white-space: nowrap;
+		margin: 0;
+		padding: 0;
+	}
+		#subscribe-submit{
+			font-size: .85em;
+			padding: .5em 1em;
+		}
 
 
 /*=============================================================================*
@@ -69,6 +291,7 @@
 #top{
 	font-size: .8em;
 }
+
 }
 
 
@@ -79,6 +302,16 @@
 #top{
 	font-size: .7em;
 }
+
+#subscription-form{
+	white-space: normal;
+	padding: 0 1em;
+}
+	#subscription-form > input{
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
 }
 
 
@@ -91,7 +324,145 @@
 	margin-top: 8em;
 	margin-bottom: 2em;
 }
+
+#preamble{
+}
 	#preamble::before{
 		background-image: url("../img/banner@2x.jpg");
-	}	
+	}
+
+
+/** Product columns */
+#products{
+	margin-left: -2em;
+	margin-right: -2em;
+}
+	/** Clearfix */
+	#products::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	#products > article{
+		float: right;
+		width: 50%;
+		padding: 0 2em 1em;
+	}
+		.product-name{
+			padding: 1.5em;
+		}
+
+		/** Product photograph */
+		.product-image{
+			position: relative;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+			.product-image::before{
+				content: "";
+				display: block;
+				padding-top: 80%;
+			}
+			.product-image > a{
+				display: block;
+				position: absolute;
+				padding: 1em 0;
+				height:	100%;
+				top:	0;
+				left:	0;
+				right:	0;
+			}
+				.product-image > a > img{
+					width: auto;
+					max-width: none;
+					height: 100%;
+				}
+
+		/** Pricing info */
+		.product-price{
+			font-size: 1.35em;
+			padding: 1em;
+		}
+			.product-price > p{
+				margin: .2em 0;
+			}
+
+
+		/** Product options */
+		.product-options{
+			margin-bottom: 1em;
+		}
+		
+		
+
+
+	/** First column */
+	#products > :first-child{
+		float: left;
+	}
+
+
+
+	/** Use a weird hack for pricing info to be 100% sure they're aligned against the right background */
+	.product-price,
+	.product-price > *{
+		position: relative;
+		z-index: 2;
+	}
+		#products > :first-child > .product-price::before{
+			content: "";
+			display: block;
+			position: absolute;
+			top:	0;
+			bottom:	0;
+			font-size:	999em;
+			background-color: inherit;
+			z-index: -2;
+			left:	-1em;
+			right:	-1em;
+		}
+
+		#products > :first-child ~ * > .product-price{
+			background: 0;
+		}
+
+
+
+	#more-info::after{
+		content: "";
+		height: 1em;
+		display: block;
+		clear: both;
+	}
+		#more-info h2{
+			font-size: 1.5em;
+			margin-bottom: 1em;
+		}
+
+		#about{
+			float: left;
+			width: 50%;
+			padding-right: 2em;
+			border: 0;
+		}
+		#delivery-and-returns{
+			float: right;
+			width: 50%;
+		}
+
+
+/** Three columns with illuminated calls-to-action. */
+#bottom{
+	display: table;
+	width: 100%;
+	margin: 1em 0;
+	padding: 0;
+	border: 2px solid #f5f5f5;
+	border-spacing: 1em;
+}
+	#bottom > *{
+		display: table-cell;
+	}
 }
