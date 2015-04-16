@@ -7,14 +7,23 @@
 
 
 	$locale	=	'zh_CN';
+	$locale	=	'en_AU';
 
-	setlocale(LC_ALL, 'zh_CN');
+	# HTML lang attribute values
+	$page_langs	=	array(
+		'en_AU'	=>	'en-AU',
+		'zh_CN'	=>	'zh_CN-Hans'
+	);
+
+
+	setlocale(LC_ALL, $locale);
 	bindtextdomain('messages', 'src/lang');
 	bind_textdomain_codeset('messages', 'UTF-8');
 	textdomain('messages');
+
 ?> 
 <!DOCTYPE html>
-<html lang="<?= $locale ?>">
+<html lang="<?= $page_langs[$locale] ?>">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -83,7 +92,7 @@
 					</ul>
 				</div>
 
-				<label class="matchstick"><?= _('Quantity:'); ?> <input type="number" step="1" min="1" value="1" /></label>
+				<label class="matchstick"><?= _('Quantity:'); ?> <input type="number" class="quantity-field" step="1" min="1" value="1" /></label>
 				<a href="#" class="add btn"><?= _('Add to bag'); ?></a>
 			</div>
 	
@@ -152,7 +161,7 @@ Australian Made'));
 					</ul>
 				</div>
 	
-				<label class="matchstick"><?= _('Quantity:'); ?> <input type="number" step="1" min="1" value="1" /></label>
+				<label class="matchstick"><?= _('Quantity:'); ?> <input type="number" class="quantity-field" step="1" min="1" value="1" /></label>
 				<a href="#" class="add btn"><?= _('Add to bag'); ?></a>
 			</div>
 	
@@ -177,6 +186,12 @@ Australian made
 				</div>
 			</div>
 		</article>
+
+
+		<div id="cart-message" role="alert" hidden="hidden">
+			<p><?= _('Product added to cart') ?></p>
+			<a href="#" class="add btn"><?= _('View cart'); ?></a>
+		</div>
 	</div>
 
 
@@ -192,7 +207,7 @@ Australian made
 				<span class="contact-number"><?= _('Phone: 03 5345 2202'); ?></span>
 				<span class="contact-email"><?=
 					sprintf(
-						# Translators: %s gets replaced with a hyperlinkde e-mail address
+						# translators: %s gets replaced with a hyperlinked e-mail address
 						_('Email: %s'),
 						'<a href="mailto:info@creswickwool.com.au">info@creswickwool.com.au</a>'
 					);

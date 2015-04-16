@@ -51,7 +51,7 @@
 
 /** Products */
 #products{
-	
+	overflow-x: hidden;
 }
 	/** Grey bar holding product's name */
 	.product-name{
@@ -133,6 +133,49 @@
 				margin-top: .35em;
 			}
 
+/** Red dialogue that pops up on the user's screen after adding an item to the shopping cart. */
+#cart-message{
+	position: fixed;
+	background: #dc2e22;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+
+	top:	2em;
+	left:	50%;
+	opacity: 0;
+	z-index: -1;
+	width:	21.6em;
+	margin-left: -10.8em;
+	padding: 1em 1em .2em;
+
+	-webkit-transition:	.3s ease all;
+	-moz-transition:	.3s ease all;
+	-o-transition:		.3s ease all;
+	transition:			.3s ease all;
+
+	-webkit-transform:	scale(.8);
+	-moz-transform:		scale(.8);
+	-ms-transform:		scale(.8);
+	-o-transform:		scale(.8);
+	transform:			scale(.8);
+}
+	#cart-message > p{
+		font-size: 1.25em;
+		font-weight: bold;
+		margin: 0;
+	}
+
+	/** Visible state  */
+	#cart-message.show{
+		z-index: 999;
+		opacity: 1;
+		-webkit-transform:	scale(1);
+		-moz-transform:		scale(1);
+		-ms-transform:		scale(1);
+		-o-transform:		scale(1);
+		transform:			scale(1);
+	}
 
 
 
@@ -259,9 +302,10 @@
 	text-align: center;
 	position: relative;
 	margin-top: 2em;
+	padding: 1em;
 }
 	#keep-in-touch > h2{
-		top: -.85em;
+		top: -1.85em;
 		display: inline-block;
 		position: relative;
 		background: #fff;
@@ -284,6 +328,12 @@
 			font-size: .85em;
 			padding: .5em 1em;
 		}
+
+
+#australian-made{
+	text-align: center;
+}
+
 
 
 /*=============================================================================*

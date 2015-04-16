@@ -5,6 +5,7 @@
 		doc			=	document,
 		body		=	doc.body,
 		each		=	Array.prototype.forEach,
+		HIDDEN		=	"hidden",
 
 
 	/** Which property to use when getting/setting an HTMLElement's textual content (thanks for NaN, IE8) */
@@ -85,8 +86,8 @@
 
 	/** Webapp's logic starts here: */
 	/** Resize folding regions to fit their (possibly-resized) content on window resize. */
-	var folds	=	document.getElementsByClassName("fold");
-	window.addEventListener("resize", (new function(){
+	var folds	=	doc.getElementsByClassName("fold");
+	win.addEventListener("resize", (new function(){
 
 		each.call(folds, function(o){
 			o.style.maxHeight = o.scrollHeight + "px";
@@ -99,7 +100,7 @@
 	
 
 	/** Folding choice menus */
-	var foldingChoices	=	document.getElementsByClassName("folding-choice");
+	var foldingChoices	=	doc.getElementsByClassName("folding-choice");
 	each.call(foldingChoices, function(THIS){
 
 		var	foldControl	=	THIS.querySelector(".control"),
@@ -118,6 +119,76 @@
 		});
 	});
 
+
+	var Message	=	{
+		el:			doc.getElementById("cart-message"),
+		visible:	false,
+		show:	function(){
+
+			/** Briefly hide the previous message if it was already visible. */
+			if(Message.visible){
+				Message.hide();
+				setTimeout(function(){ Message.show(); }, 100);
+				return;
+			}
+
+			Message.visible	=	true;
+			Message.el.removeAttribute(HIDDEN);
+			setTimeout(function(){ Message.el.classList.add("show"); }, 100);
+		},
+
+		hide:	function(){
+			Message.el.setAttribute(HIDDEN, HIDDEN);
+			Message.el.classList.remove("show");
+			Message.visible	=	false;
+		}
+	},
+
+
+
+	addProduct	=	function(productID, quantity, size){
+		if(!size){
+			
+			return;
+		}
+		
+		var req	=	new XMLHttpRequest();
+		req.addEventListener("readystatechange", function(e){
+
+			/** AJAX request's finished loading, and the server didn't send an error code. */
+			if(XMLHttpRequest.DONE === this.readyState && this.status < 400)
+				Message.show();
+		});
+
+		req.open("POST", "http://localhost:8888/CreswickWool-APIDropIn/index.php");
+		req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+		req.send("action=add_to_cart&product_id="+productID+"&quantity="+Math.min(1, quantity));
+	}
+	/** Debounce addProduct so clicking/tapping too quickly won't add multiple products. */
+	.debounce(1000, true),
+
+
+
+	products	=	doc.getElementById("products");
+	each.call(products.querySelectorAll("article"), function(THIS){
+		var	productID	=	THIS.getAttribute("data-product-id"),
+			quantity	=	THIS.querySelector(".quantity-field"),
+			sizes		=	THIS.querySelectorAll(".choices input"),
+
+			/** Retrieves the ID of the product's currently-selected size. */
+			getSelectedSize	=	function(){
+				for(var i = 0, l = sizes.length; i < l; ++i)
+					if(sizes[i].checked) return sizes[i].value;
+				return null;
+			};
+
+
+		THIS.querySelector(".add.btn").addEventListener("click", function(e){
+			addProduct(productID, quantity.value, getSelectedSize());
+			e.preventDefault();
+			return false;
+		});
+	});
 
 
 
