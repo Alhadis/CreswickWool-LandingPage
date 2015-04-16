@@ -1,0 +1,390 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2015-04-16 14:22+1000\n"
+"PO-Revision-Date: 2015-04-16 14:22+1000\n"
+"Last-Translator: John Gardner <gardnerjohng@gmail.com>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: /Users/johngardner/Jobs/CreswickWool-LandingPage\n"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:25
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:43
+msgid "Creswick Woollen Mills"
+msgstr "Creswick Woollen Mills"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:44
+msgid ""
+"Creswick Woollen Mills is the home of luxurious, natural fibre products "
+"designed in Australia. Founded in 1947 Creswick Woollen Mills is now the "
+"only coloured woollen spinning mill of its kind in Australia."
+msgstr ""
+"珂莱斯威克澳毛纺织集团（Creswick Woollen Mills) 是澳洲高贵，奢华天然纤维产品"
+"之家。集团成立于1947年，在澳洲享有很高盛誉并且是澳洲最后一座具有染色能力的澳"
+"毛纺织企业。"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:45
+msgid ""
+"Creswick has six stores across Victoria, Australia and stocks many of its "
+"products in the famous Australian department store David Jones."
+msgstr ""
+"在澳洲，珂莱斯威克旗下的六家直营店遍布整个维多利亚州。我们也是澳大利亚著名高"
+"档百货公司--David Jones的特约供货商。我们长期供应给David Jones许多豪华系列产"
+"品。"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:52
+msgid "Pure Regal Alpaca Quilt"
+msgstr "极品羊驼被"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:61
+msgid "Regular price: <s>$499</s>"
+msgstr "商场零售价：<s>$499</s>"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:62
+msgid "Special price: $388"
+msgstr "特价：$388"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:73
+#, php-format
+msgid "Your size: %s"
+msgstr "你的尺寸：%s"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:75
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:146
+msgid "Pick your size:"
+msgstr "选择你的尺寸："
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:79
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:150
+msgid "Single"
+msgstr "单人码"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:80
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:151
+msgid "Double"
+msgstr "双人码"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:81
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:152
+msgid "Queen"
+msgstr "皇后码"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:82
+msgid "Chinese Queen"
+msgstr "国王码"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:83
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:153
+msgid "King"
+msgstr "亚洲皇后码"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:84
+msgid "Chinese King"
+msgstr "亚洲国王码"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:85
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:154
+msgid "Super King"
+msgstr "加大码"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:89
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:158
+msgid "Quantity:"
+msgstr "数量："
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:95
+msgid ""
+"500 GSM\n"
+"100% alpaca\n"
+"Australian Made"
+msgstr ""
+"每平方米500克\n"
+"100%羊驼含量\n"
+"澳大利亚制造"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:100
+msgid ""
+"Pure alpaca regal quilts offer warmth without weight when compared to wool."
+msgstr "极品羊驼毛被很轻柔，温暖而没有重量感。"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:101
+msgid ""
+"An innovation in luxury quilts, Creswick's pure alpaca regal quilt features "
+"a new and exclusive quilting design which creates the softest, smoothest and "
+"warmest combination of innovative design in luxury quilts. Alpaca fleece is "
+"an exclusive and rare fibre with a unique softness that creates a truly "
+"luxurious experience in sleeping comfort."
+msgstr ""
+"我们采用世界最优质的天然纤维，最新的生产设计与独特，创新的缝线设计以及彰显奢"
+"华气质的饰带和白色缎面的拼接饰边精心制造而成。被子内部采用无缝拼接方式来增加"
+"被子的柔软度与保暖度，外胎采用升级设计的高精纺棉缎，这种做法使得驼绒被具有防"
+"潮、耐寒、柔软、透气、弹性好、膨松度经久不衰，卓越的保暖性能和多项对你有益的"
+"产品特征。"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:104
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:171
+msgid "Sizing Guide"
+msgstr "尺寸指南"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:105
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:172
+msgid "Comes in the following sizes:"
+msgstr "我们有以下尺寸："
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:107
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:174
+msgid "Single:"
+msgstr "单人码："
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:107
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:174
+msgid "140cm × 210cm"
+msgstr "140㎝ × 210㎝"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:108
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:175
+msgid "Double:"
+msgstr "双人码："
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:108
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:175
+msgid "180cm × 210cm"
+msgstr "180㎝ × 210㎝"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:109
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:176
+msgid "Queen:"
+msgstr "皇后码："
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:109
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:176
+msgid "210cm × 210cm"
+msgstr "210㎝ × 210㎝"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:110
+msgid "Chinese Queen:"
+msgstr "国王码："
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:110
+msgid "230cm × 200cm"
+msgstr "230㎝ × 200㎝"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:111
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:177
+msgid "King:"
+msgstr "亚洲皇后码："
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:111
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:177
+msgid "245cm × 210cm"
+msgstr "245㎝ × 210㎝"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:112
+msgid "Chinese King:"
+msgstr "亚洲国王码："
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:112
+msgid "240cm × 220cm"
+msgstr "240㎝ × 220㎝"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:113
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:178
+msgid "Super King:"
+msgstr "加大码："
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:113
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:178
+msgid "240cm × 270cm"
+msgstr "240㎝ × 270㎝"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:124
+msgid "Alpaca Luxury Quilt"
+msgstr "豪华羊驼被"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:133
+msgid "Regular price: <s>$379</s>"
+msgstr "商场零售价：<s>$379</s>"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:134
+msgid "Special price: $258"
+msgstr "特价：$258"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:144
+#, php-format
+msgid "Your Size: %s"
+msgstr "你的尺寸：%s"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:159
+msgid "Add to bag"
+msgstr "添加到购物篮"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:165
+msgid ""
+"50% Alpaca and 50% Wool\n"
+"Australian made\n"
+"400 GSM"
+msgstr ""
+"每平方米400克\n"
+"50％羊驼 50％羊毛\n"
+"澳大利亚制造"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:168
+msgid ""
+"The Creswick Woollen Mills alpaca and wool quilt is the ultimate in sleeping "
+"luxury. With 50% alpaca and 50% wool fleece encased in a sateen fabric of "
+"the finest woven cotton yarn; the Creswick alpaca and wool quilt has been "
+"purposely designed to deliver superior softness and luxury. Offering "
+"lightweight comfort and natural warmth, the unique thermal properties of "
+"these remarkable fibres mean you will always enjoy a perfect night's sleep."
+msgstr ""
+"Creswick豪华羊驼绒被会让你有豪华奢侈的睡眠体验。我们混合50％羊驼毛以及50％羊"
+"毛作为填充物，外胎采用升级设计的超精棉缎包装，从而使我们的羊驼绒被具有卓越的"
+"柔软性，舒适性，温暖性又彰显豪华。在夜晚，这种特殊罕见的纤维会让你享受完美的"
+"睡眠。"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:190
+msgid "About"
+msgstr "Creswick简介"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:191
+msgid ""
+"Located in Creswick, a small country township approximately 120km from "
+"Melbourne, only 20 minutes north-east of Ballarat and 20 minutes south-east "
+"of Daylesford, Creswick Woollen Mills has become a household name both in "
+"Australia and globally. Creswick's continued success is attributed to "
+"ongoing research and innovation, as well as dedication to high quality with "
+"exclusive designs."
+msgstr ""
+"珂莱斯威克澳毛纺织集团的总部设在墨尔本，工厂在距离墨尔本 大约120公里的珂莱斯"
+"威克小镇上，座落在巴拉瑞特（Ballarat）的东北部和戴莱思福（Daylesford）的西南"
+"部之间，从柯莱斯 威克开车到这两个地方仅需20分钟。</p><p>Creswick  Woollen "
+"Mills的名字在澳洲乃至全球享有极高的盛誉。珂莱斯威克澳毛纺织集团的不断成功归结"
+"于持续的研究与创新，以及独特的设计创意和高品质。为了拓展集团的新旅游基础设施"
+"的开发与建设，珂莱斯威克集团目前对该项目投资已过300百万人民币。"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:192
+msgid ""
+"Visit Creswick Woollen Mills to see where the products are manufactured and "
+"visit with our friendly alpacas."
+msgstr ""
+"我们热烈邀请你来参观珂莱斯威克羊毛纺织集团，亲眼见证澳洲制造业的情况，零距离"
+"接触可爱的羊驼。"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:194
+msgid "Contact details for the Mill:"
+msgstr "联系方式："
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:195
+msgid "Phone: 03 5345 2202"
+msgstr "电话: 0061-03- 5345 2202；0061-03-98185055"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:199
+#, php-format
+msgid "Email: %s"
+msgstr "电子邮件: %s"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:208
+msgid "Delivery and Returns"
+msgstr "配送及退货"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:209
+msgid "We accept international orders."
+msgstr "我们接受国际订单。"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:210
+msgid ""
+"<strong>Orders shipped overseas are exempt from GST charges (this will be "
+"deducted at the checkout).</strong>"
+msgstr "运往海外订单免收10%的消费税GST（结账时自动扣除）。"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:211
+msgid ""
+"Orders are sent via International Post Courier and are registered. Please "
+"allow up to 10 working days for orders to be received after a 48-hour "
+"processing period. Overseas orders will only show up on the tracking when "
+"they arrive at the country of destination."
+msgstr ""
+"国际订单会通过国际邮政快递挂号发送。 经过48小时的程序处理后，你会在最多10个工"
+"作日之内收到你的货品。</p><p>当海外订单到达目的地国家时，只能在当地国家跟踪查"
+"询。"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:212
+msgid ""
+"We hope you will be delighted with your Creswick Woollen Mills purchase. If "
+"for some reason you are unsatisfied with your purchase from the Creswick "
+"Woollen Mills website we will happily exchange or refund the purchase price "
+"of the item in accordance to our returns and exchanges policy."
+msgstr ""
+"我们预祝你在珂莱斯威克购物愉快。如果因故你不满意在Creswick Woollen Mills网站"
+"购买的产品，我们将按照我们的退货及换货政策乐意为你更换或者退款。"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:218
+msgid "Secure Shopping"
+msgstr "安全采购"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:219
+msgid "Full Website"
+msgstr "我们官方购物网"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:220
+msgid "Natural Fibres"
+msgstr "天然纤维"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:225
+msgid "Keep in touch"
+msgstr "请与我们保持联系"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:226
+msgid "Subscribe right away and you will receive our news everyday!"
+msgstr "马上注册你的电子邮件，你会在第一时间收到我们的新闻和优惠活动！"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:228
+msgid "Put your email address here"
+msgstr "请把你的电子邮件写在这里"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:229
+msgid "Subscribe"
+msgstr "订阅"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:234
+msgid "Australian Made"
+msgstr "澳洲制造"
+
+#~ msgid ""
+#~ "The Creswick Woollen Mills alpaca and wool quilt is the ultimate in "
+#~ "sleeping luxury. With 50% alpaca and 50% wool fleece encased in a sateen "
+#~ "fabric of the finest woven cotton yarn; the Creswick alpaca and wool "
+#~ "quilt has been purposely designed to deliver superior softness and luxury."
+#~ msgstr ""
+#~ "Creswick豪华羊驼绒被会让你有豪华奢侈的睡眠体验。我们混合50％羊驼毛以及50％"
+#~ "羊毛作为填充物，外胎采用升级设计的超精棉缎包装，从而使我们的羊驼绒被具有卓"
+#~ "越的柔软性，舒适性，温暖性又彰显豪华。在夜晚，这种特殊罕见的纤维会让你享受"
+#~ "完美的睡眠。"
+
+#~ msgid "140cm &times; 210cm"
+#~ msgstr "140㎝ × 210㎝"
+
+#~ msgid "180cm &times; 210cm"
+#~ msgstr "180㎝ × 210㎝"
+
+#~ msgid "210cm &times; 210cm"
+#~ msgstr "210㎝ × 210㎝"
+
+#~ msgid "230cm &times; 200cm"
+#~ msgstr "230㎝ × 200㎝"
+
+#~ msgid "245cm &times; 210cm"
+#~ msgstr "245㎝ × 210㎝"
+
+#~ msgid "240cm &times; 220cm"
+#~ msgstr "240㎝ × 220㎝"
+
+#~ msgid "240cm &times; 270cm"
+#~ msgstr "240㎝ × 220㎝"

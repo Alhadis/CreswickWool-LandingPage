@@ -21,10 +21,7 @@ html{
 	overflow-x: hidden;
 	overflow-y: scroll;
 
-	font-family: Georgia, KaiTi, FangSong, 楷体, 仿宋, STKaiti, STFangSong, 华文楷体, 华文仿宋, SharpReg, serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-
+	font-family: Georgia, SharpReg, KaiTi, FangSong, 楷体, 仿宋, STKaiti, STFangSong, 华文楷体, 华文仿宋, SharpReg, serif;
 	-webkit-font-feature-settings:	"liga" 1, "calt" 1, "swsh" 1;
 	-moz-font-feature-settings:		"liga=1, calt=1, swsh=1";
 	-moz-font-feature-settings:		"liga" 1, "calt" 1, "swsh" 1;
@@ -33,6 +30,8 @@ html{
 }
 	html:lang(en){
 		font-family: Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 	}
 
 
@@ -89,7 +88,10 @@ h3{
 }
 
 
-p, ul, ol, dl{
+p:lang(en),
+ul:lang(en),
+ol:lang(en),
+dl:lang(en){
 	font-size: .875em;
 	line-height: 1.5;
 }
