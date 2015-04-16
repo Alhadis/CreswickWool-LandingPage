@@ -25,6 +25,7 @@
 <!DOCTYPE html>
 <html lang="<?= $page_langs[$locale] ?>">
 <head>
+<!--[if lte IE 9]><script src="src/js/compat/ie.lteIE9.js"></script><![endif]-->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="initial-scale=1, minimum-scale=1" />
