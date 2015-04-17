@@ -51,7 +51,9 @@
 /** Products */
 #products{
 	overflow-x: hidden;
-	padding: 0 2em;
+	padding: 0 2em 6.5em;
+	position: relative;
+	z-index: 2;
 }
 	/** Grey bar holding product's name */
 	.product-name{
@@ -185,7 +187,25 @@
 	background: #ebebeb;
 	padding: 2em;
 	padding-bottom: 1em;
+	position: relative;
 }
+	#more-info::before{
+		content: "";
+		position: absolute;
+		padding-top: 6em;
+		bottom:	100%;
+		left:	0;
+		right:	0;
+		
+		background: no-repeat 50% 0 url("../img/australian-made.jpg");
+		-webkit-background-size:	auto 100%;
+		-khtml-background-size:		auto 100%;
+		-moz-background-size:		auto 100%;
+		-ms-background-size:		auto 100%;
+		-o-background-size:			auto 100%;
+		background-size:			auto 100%;
+	}
+
 	#more-info h2{
 		padding: 0;
 	}
@@ -408,7 +428,15 @@ body{
 #products{
 	margin-left: -2em;
 	margin-right: -2em;
-	padding: 0;
+	padding: 0 0 5em;
+
+	background: no-repeat 50% 100% url("../img/australian-made.jpg");
+	-webkit-background-size:	auto 5.5em;
+	-khtml-background-size:		auto 5.5em;
+	-moz-background-size:		auto 5.5em;
+	-ms-background-size:		auto 5.5em;
+	-o-background-size:			auto 5.5em;
+	background-size:			auto 5.5em;
 }
 	/** Clearfix */
 	#products::after{
@@ -507,6 +535,9 @@ body{
 #more-info{
 	margin: 0 -2em;
 }
+	#more-info::before{
+		content: none;
+	}
 	#more-info::after{
 		content: "";
 		height: 1em;
@@ -547,6 +578,15 @@ body{
 	2.5 TWEAKPOINT: Large/landscape tablets (800+)
 ===============================================================================*/
 @media (min-width: 50em){
+
+#products{
+	-webkit-background-size:	100%;
+	-khtml-background-size:		100%;
+	-moz-background-size:		100%;
+	-ms-background-size:		100%;
+	-o-background-size:			100%;
+	background-size:			100%;
+}
 
 /** Three columns with illuminated calls-to-action. */
 #bottom{
