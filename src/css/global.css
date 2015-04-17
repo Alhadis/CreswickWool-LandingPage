@@ -331,6 +331,94 @@ textarea{
 				background: #dad9d9; 
 			}
 
+	/** Angry red glow displayed when a user's neglected to specify an option. */
+	@-webkit-keyframes glow{
+		from{	-webkit-box-shadow:	0 0 0 rgba(255,0,0,0),	0 0 0 0 rgba(255,0,0,0);	}
+		to{		-webkit-box-shadow:	0 0 0 #f00,				0 0 23px 3px #f00;			}
+	}
+	@-moz-keyframes glow{
+		from{	box-shadow:	0 0 0 rgba(255,0,0,0),	0 0 0 0 rgba(255,0,0,0);	}
+		to{		box-shadow:	0 0 0 #f00,				0 0 23px 3px #f00;			}
+	}
+	@-o-keyframes glow{
+		from{	box-shadow:	0 0 0 rgba(255,0,0,0),	0 0 0 0 rgba(255,0,0,0);	}
+		to{		box-shadow:	0 0 0 #f00,				0 0 23px 3px #f00;			}
+	}
+	@keyframes glow{
+		from{	box-shadow:	0 0 0 rgba(255,0,0,0),	0 0 0 0 rgba(255,0,0,0);	}
+		to{		box-shadow:	0 0 0 #f00,				0 0 23px 3px #f00;			}
+	}
+
+	/** Flash of red to fill the option menu's heading/label element. */
+	@-webkit-keyframes flash-red{
+		from{	background: #ebebeb;	color: #605f5f;	}
+		to{		background: #e80000;	color: #fff;	}
+	}
+	@-moz-keyframes flash-red{
+		from{	background: #ebebeb;	color: #605f5f;	}
+		to{		background: #e80000;	color: #fff;	}
+	}
+	@-o-keyframes flash-red{
+		from{	background: #ebebeb;	color: #605f5f;	}
+		to{		background: #e80000;	color: #fff;	}
+	}
+	@keyframes flash-red{
+		from{	background: #ebebeb;	color: #605f5f;	}
+		to{		background: #e80000;	color: #fff;	}
+	}
+
+	/** Darker flash of red that affects the menu's dropdown arrow. */
+	@-webkit-keyframes flash-dark-red{
+		from{	background: #d6d4d4;}
+		to{		background: #900;	}
+	}
+	@-moz-keyframes flash-dark-red{
+		from{	background: #d6d4d4;}
+		to{		background: #900;	}
+	}
+	@-o-keyframes flash-dark-red{
+		from{	background: #d6d4d4;}
+		to{		background: #900;	}
+	}
+	@keyframes flash-dark-red{
+		from{	background: #d6d4d4;}
+		to{		background: #900;	}
+	}
+
+	.folding-choice.glow{
+		-webkit-animation:	glow .3s ease-in-out 0s 6 alternate;
+		-moz-animation:		glow .3s ease-in-out 0s 6 alternate;
+		-o-animation:		glow .3s ease-in-out 0s 6 alternate;
+		animation:			glow .3s ease-in-out 0s 6 alternate;
+	}
+		.folding-choice.glow > .disclosure{
+			-webkit-animation:	flash-red .3s ease-in-out 0s 6 alternate;
+			-moz-animation:		flash-red .3s ease-in-out 0s 6 alternate;
+			-o-animation:		flash-red .3s ease-in-out 0s 6 alternate;
+			animation:			flash-red .3s ease-in-out 0s 6 alternate;
+		}
+		.folding-choice.glow > .disclosure::before{
+			-webkit-animation:	flash-dark-red .3s ease-in-out 0s 6 alternate;
+			-moz-animation:		flash-dark-red .3s ease-in-out 0s 6 alternate;
+			-o-animation:		flash-dark-red .3s ease-in-out 0s 6 alternate;
+			animation:			flash-dark-red .3s ease-in-out 0s 6 alternate;
+		}
+
+	/** No CSS3 animation support */
+	.no-anim .folding-choice.glow{
+		-webkit-box-shadow:	0 0 0 #f00, 0 0 23px 3px #f00;
+		-moz-box-shadow:	0 0 0 #f00, 0 0 23px 3px #f00;
+		box-shadow:			0 0 0 #f00, 0 0 23px 3px #f00;
+	}
+		.no-anim .folding-choice.glow > .disclosure{
+			background: #e80000;
+			color: #fff;
+		}
+		.no-anim .folding-choice.glow > .disclosure::before{
+			background: #900;
+		}
+
+
 
 /** Shaded row with darker-shaded entry field. */
 .matchstick{

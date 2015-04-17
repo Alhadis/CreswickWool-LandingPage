@@ -12,13 +12,27 @@
 		TEXT		=	"textContent" in body ? "textContent" : "innerText",
 
 
-	/** Page anatomy */
-		etc			=	doc.getElementById("etc"),
-		whatever	=	doc.getElementById("whatever"),
-		main		=	doc.querySelector("main");
+
+	/**
+	 * Ascertains a browser's support for a CSS property.
+	 * 
+	 * @param {String} n - CSS property name, supplied in sentence case (e.g., "Transition")
+	 * @return {Boolean} TRUE if the browser supports the property in either prefixed or unprefixed form. 
+	 */
+	cssSupport	=	function(n){
+		var s	=	document.documentElement.style;
+		if(n.toLowerCase() in s) return true;
+		for(var p = "Webkit Moz Ms O Khtml", p = (p.toLowerCase() + p).split(" "), i = 0; i < 10; ++i)
+			if(p[i]+n in s) return true;
+		return false;
+	};
 
 
-
+	/** Store whether the browser supports CSS3 animations or not */
+	if(!cssSupport("Animation")){
+		win.NO_ANIM	=	true;
+		doc.documentElement.classList.add("no-anim");
+	}
 
 
 
@@ -147,11 +161,6 @@
 
 
 	addProduct	=	function(productID, quantity, size){
-		if(!size){
-			
-			return;
-		}
-		
 		var req	=	new XMLHttpRequest();
 		req.addEventListener("readystatechange", function(e){
 
@@ -169,22 +178,62 @@
 
 
 
+
 	products	=	doc.getElementById("products");
 	each.call(products.querySelectorAll("article"), function(THIS){
 		var	productID	=	THIS.getAttribute("data-product-id"),
 			quantity	=	THIS.querySelector(".quantity-field"),
-			sizes		=	THIS.querySelectorAll(".choices input"),
+			menu		=	THIS.querySelector(".folding-choice"),
+			menuControl	=	menu.querySelector("input.control"),
+			sizes		=	menu.querySelectorAll(".choices input"),
+			GLOW		=	"glow", /** MUNGIN' IT. */
+
 
 			/** Retrieves the ID of the product's currently-selected size. */
 			getSelectedSize	=	function(){
 				for(var i = 0, l = sizes.length; i < l; ++i)
 					if(sizes[i].checked) return sizes[i].value;
 				return null;
-			};
+			},
+
+
+			/** Flash the menu a bright red if the user's not filled it out. */
+			showError	=	function(){
+
+				if(win.NO_ANIM){
+					var iterations		=	6,
+						callbackID		=	setInterval(function(){
+							menu.classList.toggle(GLOW);
+							if(!(--iterations)){
+								menuControl.checked	=	false;
+								clearInterval(callbackID);
+							}
+						}, 300);
+				}
+
+				else menu.classList.add(GLOW);
+			}.debounce(1800, true);
+
+
+
+		/** Callback triggered when flash animation's finished playing. */
+		menu.addEventListener("animationend", function(e){
+			
+			/** Remove glow animation and open menu. */
+			if(GLOW === e.animationName){
+				menuControl.checked	=	false;
+				menu.classList.remove(GLOW);
+			}
+		});
 
 
 		THIS.querySelector(".add.btn").addEventListener("click", function(e){
-			addProduct(productID, quantity.value, getSelectedSize());
+			
+			var size = getSelectedSize();
+			size ?
+				addProduct(productID, quantity.value, size) :
+				showError();
+
 			e.preventDefault();
 			return false;
 		});
