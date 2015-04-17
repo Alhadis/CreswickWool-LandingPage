@@ -187,14 +187,14 @@ Australian made
 				</div>
 			</div>
 		</article>
-
-
-		<div id="cart-message" role="alert" hidden="hidden">
-			<p><?= _('Product added to cart') ?></p>
-			<a href="http://www.creswickwool.com/checkout/cart" class="add btn"><?= _('View cart'); ?></a>
-		</div>
 	</div>
 
+
+
+	<div id="cart-message" role="alert" hidden="hidden">
+		<p><?= _('Product added to cart') ?></p>
+		<a href="http://www.creswickwool.com/checkout/cart" class="add btn"><?= _('View cart'); ?></a>
+	</div>
 
 
 
