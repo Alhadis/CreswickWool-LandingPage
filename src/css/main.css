@@ -552,6 +552,7 @@ body{
 }
 	#bottom > *{
 		display: table-cell;
+		padding-left: 4.5em;
 	}
 		#bottom span{
 			font-size: 1em;
