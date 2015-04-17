@@ -1,7 +1,7 @@
 
 /** Header suspended above white background */
 #top{
-	margin: 7em 0 1.5em;
+	margin: 7em 2em 1.5em;
 	position: relative;
 	height: 0;
 }
@@ -22,13 +22,12 @@
 	background: no-repeat 100% 100% url("../img/alpaca.jpg");
 	text-align: center;
 	padding-bottom: 2em;
-	margin: 0 -2em;
 }
 	/** Banner image */
 	#preamble::before{
 		content: "";
 		display: block;
-		margin-bottom: 3em;
+		margin-bottom: 2em;
 		padding-top: 42%;
 		background: no-repeat 50% 100% url("../img/banner.jpg");
 		-webkit-background-size:	100% auto;
@@ -52,6 +51,7 @@
 /** Products */
 #products{
 	overflow-x: hidden;
+	padding: 0 2em;
 }
 	/** Grey bar holding product's name */
 	.product-name{
@@ -88,7 +88,7 @@
 		padding: .6em;
 		font-size: 1.25em;
 		text-transform: uppercase;
-		margin: 0 -2rem 1em; 
+		margin: 0 -2rem 1.5em; 
 	}
 		/** Marked-down price */
 		.faded{
@@ -185,7 +185,6 @@
 	background: #ebebeb;
 	padding: 2em;
 	padding-bottom: 1em;
-	margin: 0 -2em;
 }
 	#more-info h2{
 		padding: 0;
@@ -204,9 +203,7 @@
 
 /** Assorted, eye-catching points of interest. */
 #bottom{
-	margin: 1em -1em;
 	padding: 0 1em;
-	border: 1px solid #f5f5f5;
 }
 	/** One of three grey-shaded columns in page's footer. */
 	#bottom > *{
@@ -301,11 +298,11 @@
 	border: 1px solid #ededed;
 	text-align: center;
 	position: relative;
-	margin-top: 2em;
-	padding: 1em;
+	margin: 2em 1em 1em;
+	padding: 0 1em 1em;
 }
 	#keep-in-touch > h2{
-		top: -1.85em;
+		top: -.85em;
 		display: inline-block;
 		position: relative;
 		background: #fff;
@@ -343,7 +340,6 @@
 #top{
 	font-size: .8em;
 }
-
 }
 
 
@@ -353,6 +349,17 @@
 @media (max-width: 21.5em){
 #top{
 	font-size: .7em;
+}
+
+#products{
+	padding: 0 1em;
+}
+	.product-price{
+		margin-bottom: 1em;
+	}
+
+#more-info{
+	padding: 1em;
 }
 
 #subscription-form{
@@ -372,12 +379,17 @@
 ===============================================================================*/
 @media (min-width: 37.5em){
 
+body{
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
 #top{
-	margin-top: 8em;
-	margin-bottom: 2em;
+	margin: 8em 0 2em;
 }
 
 #preamble{
+	margin: 0 -2em;
 }
 	#preamble::before{
 		background-image: url("../img/banner@2x.jpg");
@@ -388,6 +400,7 @@
 #products{
 	margin-left: -2em;
 	margin-right: -2em;
+	padding: 0;
 }
 	/** Clearfix */
 	#products::after{
@@ -403,6 +416,7 @@
 	}
 		.product-name{
 			padding: 1.5em;
+			white-space: nowrap;
 		}
 
 		/** Product photograph */
@@ -436,6 +450,7 @@
 		.product-price{
 			font-size: 1.35em;
 			padding: 1em;
+			white-space: nowrap;
 		}
 			.product-price > p{
 				margin: .2em 0;
@@ -481,7 +496,9 @@
 		}
 
 
-
+#more-info{
+	margin: 0 -2em;
+}
 	#more-info::after{
 		content: "";
 		height: 1em;
@@ -505,6 +522,24 @@
 		}
 
 
+#bottom{
+	margin: 0 -2em;
+}
+	#bottom > *{
+		padding-left: 1em;
+	}
+		#bottom span{
+			font-size: 1.35em;
+		}
+
+}
+
+
+/*=============================================================================*
+	2.5 TWEAKPOINT: Large/landscape tablets (800+)
+===============================================================================*/
+@media (min-width: 50em){
+
 /** Three columns with illuminated calls-to-action. */
 #bottom{
 	display: table;
@@ -513,8 +548,13 @@
 	padding: 0;
 	border: 2px solid #f5f5f5;
 	border-spacing: 1em;
+	table-layout: fixed;
 }
 	#bottom > *{
 		display: table-cell;
 	}
+		#bottom span{
+			font-size: 1em;
+		}
+
 }

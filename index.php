@@ -7,7 +7,7 @@
 
 
 	$locale	=	'zh_CN';
-	$locale	=	'en_AU';
+#	$locale	=	'en_AU';
 
 	# HTML lang attribute values
 	$page_langs	=	array(
