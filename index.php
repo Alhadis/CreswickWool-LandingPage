@@ -7,7 +7,7 @@
 
 
 	$locale	=	'zh_CN';
-	$locale	=	'en_AU';
+#	$locale	=	'en_AU';
 
 	# HTML lang attribute values
 	$page_langs	=	array(
@@ -191,7 +191,7 @@ Australian made
 
 		<div id="cart-message" role="alert" hidden="hidden">
 			<p><?= _('Product added to cart') ?></p>
-			<a href="#" class="add btn"><?= _('View cart'); ?></a>
+			<a href="http://www.creswickwool.com/checkout/cart" class="add btn"><?= _('View cart'); ?></a>
 		</div>
 	</div>
 

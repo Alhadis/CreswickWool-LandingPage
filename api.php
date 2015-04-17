@@ -21,6 +21,45 @@ $response = array('message' => '', 'status' => 200);
 
 # Add to cart
 if($_POST['action'] === 'add_to_cart'){
+	
+
+	$size_map	=	array(
+		'Single'		=>	1,
+		'Double'		=>	2,
+		'Queen'			=>	3,
+		'Chinese Queen'	=>	4,
+		'King'			=>	5,
+		'Chinese King'	=>	6,
+		'Super King'	=>	7
+	);
+	
+	
+	$product_ids	=	array(
+		
+		# Pure regal alpaca quilt
+		12245	=>	array(				#	⤹ Replace these IDs with the real Magento "subproduct" IDs.
+			$size_map['Single']			=>	12246,
+			$size_map['Double']			=>	12247,
+			$size_map['Queen']			=>	12248,
+			$size_map['Chinese Queen']	=>	12249,
+			$size_map['King']			=>	10124,
+			$size_map['Chinese King']	=>	1214124124,
+			$size_map['Super King']		=>	10124
+		),
+
+		# Alpaca luxury quilt
+		9699	=>	array(				#	⤹ Replace these IDs with the real Magento "subproduct" IDs.
+			$size_map['Single']			=>	12246,
+			$size_map['Double']			=>	12247,
+			$size_map['Queen']			=>	12248,
+		#	$size_map['Chinese Queen']	=>	12249,
+			$size_map['King']			=>	10124,
+			$size_map['Chinese King']	=>	1214124124,
+		#	$size_map['Super King']		=>	10124
+		)
+	);
+
+
 
 	try{
 		$product_id		=	$_POST['product_id'];

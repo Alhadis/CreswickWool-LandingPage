@@ -160,7 +160,7 @@
 				Message.show();
 		});
 
-		req.open("POST", "http://localhost:8888/CreswickWool-APIDropIn/index.php");
+		req.open("POST", "api.php");
 		req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 		req.send("action=add_to_cart&product_id="+productID+"&quantity="+Math.min(1, quantity));
 	}
