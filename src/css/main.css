@@ -340,6 +340,10 @@
 #top{
 	font-size: .8em;
 }
+#cart-message{
+	top: 1em;
+	font-size: .9em;
+}
 }
 
 
@@ -360,6 +364,10 @@
 
 #more-info{
 	padding: 1em;
+}
+
+#cart-message{
+	font-size: .85em;
 }
 
 #subscription-form{
