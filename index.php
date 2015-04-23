@@ -198,9 +198,13 @@ Australian made
 
 
 
-	<div id="cart-message" role="alert" hidden="hidden">
+	<div class="msg" id="cart-add" role="alert" hidden="hidden">
 		<p><?= _('Product added to cart') ?></p>
 		<a href="<?= $base_url ?>checkout/cart" class="add btn"><?= _('View cart'); ?></a>
+	</div>
+
+	<div class="msg" id="cart-error" role="alert" hidden="hidden">
+		<p><?= _('Product could not be added to cart') ?></p>
 	</div>
 
 

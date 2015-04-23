@@ -134,39 +134,67 @@
 	});
 
 
-	var Message	=	{
-		el:			doc.getElementById("cart-message"),
-		visible:	false,
-		show:	function(){
+	var Message	=	function(selector, lifespan){
+		var THIS		=	this,
+			shownClass	=	"show";
+
+		THIS.el			=	doc.querySelector(selector);
+		THIS.visible	=	THIS.el.classList.contains(shownClass);
+		THIS.show		=	function(){			
 
 			/** Briefly hide the previous message if it was already visible. */
-			if(Message.visible){
-				Message.hide();
-				setTimeout(function(){ Message.show(); }, 100);
+			if(THIS.visible){
+				THIS.hide();
+				setTimeout(function(){ THIS.show(); }, 100);
 				return;
 			}
 
-			Message.visible	=	true;
-			Message.el.removeAttribute(HIDDEN);
-			setTimeout(function(){ Message.el.classList.add("show"); }, 100);
-		},
+			THIS.visible	=	true;
+			THIS.el.removeAttribute(HIDDEN);
+			setTimeout(function(){ THIS.el.classList.add(shownClass); }, 100);
+			
+			/** Queue a removal of the message if a lifespan was specified */
+			if(lifespan) setTimeout(function(){ THIS.hide(1)}, lifespan);
+		};
 
-		hide:	function(){
-			Message.el.setAttribute(HIDDEN, HIDDEN);
-			Message.el.classList.remove("show");
-			Message.visible	=	false;
+		THIS.hide	=		function(fade){
+			if(THIS.fading) return;
+
+			/** Fade out */
+			if(fade){
+				THIS.fading	=	true;
+				setTimeout(function(){
+					THIS.fading = false;
+					THIS.hide();
+				}, 300);
+				THIS.el.classList.remove(shownClass);
+			}
+
+			/** Hide immediately, no transition */
+			else{
+				THIS.el.setAttribute(HIDDEN, HIDDEN);
+				THIS.el.classList.remove(shownClass);
+				THIS.visible	=	false;
+			}
 		}
 	},
+
+	msgAdded	=	new Message("#cart-add"),
+	msgError	=	new Message("#cart-error", 5000),
+
 
 
 
 	addProduct	=	function(productID, quantity, size){
 		var req	=	new XMLHttpRequest();
 		req.addEventListener("readystatechange", function(e){
+			
+			/** AJAX request's finished loading */
+			if(XMLHttpRequest.DONE === this.readyState){
 
-			/** AJAX request's finished loading, and the server didn't send an error code. */
-			if(XMLHttpRequest.DONE === this.readyState && this.status < 400)
-				Message.show();
+				/** Server didn't send an error code. */
+				(this.status < 400 ? msgAdded : msgError).show();
+			}
 		});
 
 		req.open("POST", "api.php");
@@ -238,7 +266,6 @@
 			return false;
 		});
 	});
-
 
 
 }());

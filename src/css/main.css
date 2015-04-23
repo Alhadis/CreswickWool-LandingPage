@@ -136,7 +136,7 @@
 			}
 
 /** Red dialogue that pops up on the user's screen after adding an item to the shopping cart. */
-#cart-message{
+.msg{
 	position: fixed;
 	background: #dc2e22;
 	color: #fff;
@@ -166,14 +166,14 @@
 	-moz-backface-visibility:		hidden;
 	backface-visibility:			hidden;
 }
-	#cart-message > p{
+	.msg > p{
 		font-size: 1.25em;
 		font-weight: bold;
 		margin: 0;
 	}
 
 	/** Visible state  */
-	#cart-message.show{
+	.show.msg{
 		z-index: 999;
 		opacity: 1;
 		-webkit-transform:	scale(1);
@@ -183,7 +183,12 @@
 		transform:			scale(1);
 	}
 
-
+	/** Centred error message */
+	#cart-error{
+		top: 50%;
+		margin-top: -2em;
+		padding-bottom: 1em;
+	}
 
 
 
@@ -364,7 +369,7 @@
 #top{
 	font-size: .8em;
 }
-#cart-message{
+#cart-add{
 	top: 1em;
 	font-size: .9em;
 }
@@ -390,7 +395,7 @@
 	padding: 1em;
 }
 
-#cart-message{
+.msg{
 	font-size: .85em;
 }
 
