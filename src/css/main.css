@@ -161,6 +161,10 @@
 	-ms-transform:		scale(.8);
 	-o-transform:		scale(.8);
 	transform:			scale(.8);
+
+	-webkit-backface-visibility:	hidden;
+	-moz-backface-visibility:		hidden;
+	backface-visibility:			hidden;
 }
 	#cart-message > p{
 		font-size: 1.25em;
