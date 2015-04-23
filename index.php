@@ -1,5 +1,7 @@
 <?php
-	$base_url	=	'../';
+	$base_url		=	'../';
+	$environment	=	FALSE === stripos($_SERVER['SERVER_NAME'], 'creswickwool') ? 'DEVELOPMENT' : 'PRODUCTION';
+ 
 
 	function features_list($list){
 		$features	=	array_filter(explode(PHP_EOL, $list));
@@ -32,9 +34,13 @@
 <meta name="viewport" content="initial-scale=1, minimum-scale=1" />
 <title><?= _('Creswick Woollen Mills'); ?></title>
 
+<?php if($environment === 'DEVELOPMENT'): ?> 
 <link rel="stylesheet" type="text/css" href="src/css/fonts.css" />
 <link rel="stylesheet" type="text/css" href="src/css/global.css" />
 <link rel="stylesheet" type="text/css" href="src/css/main.css" />
+<?php else: ?> 
+<link rel="stylesheet" type="text/css" href="src/min/main.css" />
+<?php endif; ?> 
 </head>
 
 
@@ -248,6 +254,6 @@ Australian made
 	<p id="australian-made"><?= _('Australian Made'); ?></p>
 
 
-	<script type="text/javascript" src="src/js/main.js"></script>
+	<script type="text/javascript" src="src/<?= $environment === 'DEVELOPMENT' ? 'js' : 'min' ?>/main.js"></script>
 </body>
 </html>
