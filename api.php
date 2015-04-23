@@ -37,14 +37,14 @@ if($_POST['action'] === 'add_to_cart'){
 	$product_ids	=	array(
 		
 		# Pure regal alpaca quilt
-		12245	=>	array(				#	⤹ Replace these IDs with the real Magento "subproduct" IDs.
-			$size_map['Single']			=>	12246,
-			$size_map['Double']			=>	12247,
-			$size_map['Queen']			=>	12248,
-			$size_map['Chinese Queen']	=>	12249,
-			$size_map['King']			=>	10124,
-			$size_map['Chinese King']	=>	1214124124,
-			$size_map['Super King']		=>	10124
+		12245	=>	array(
+			$size_map['Single']			=>	12233,
+			$size_map['Double']			=>	12234,
+			$size_map['Queen']			=>	12232,
+			$size_map['Chinese Queen']	=>	17483,
+			$size_map['King']			=>	12235,
+			$size_map['Chinese King']	=>	17482,
+			$size_map['Super King']		=>	12236
 		),
 
 		# Alpaca luxury quilt
@@ -86,4 +86,10 @@ else{
 
 # Respond
 echo json_encode($response);
-http_response_code($response['status']);
+
+
+$response_message   =   array(
+	200 =>  'OK',
+	400 =>  'Bad Request'
+);
+header($_SERVER['SERVER_PROTOCOL'] ?: 'HTTP/1.0' . ' ' . $response_message[$response['status']]);
