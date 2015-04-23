@@ -1,4 +1,5 @@
 <?php
+	$base_url	=	'../';
 
 	function features_list($list){
 		$features	=	array_filter(explode(PHP_EOL, $list));
@@ -41,7 +42,7 @@
 <body>
 
 	<header id="top">
-		<a id="logo" class="r creswick" href="#">Creswick Wool</a>
+		<a id="logo" class="r creswick" href="<?= $base_url ?>">Creswick Wool</a>
 		<a class="r weibo" href="http://weibo.com/u/5035482887" target="_blank">微博 Weibo.com</a>
 	</header>
 
@@ -59,7 +60,7 @@
 			<h2 class="product-name" data-product-uri="//www.creswickwool.com/alpaca-pillow-luxury-twin-pack.html"><?= _('Pure Regal Alpaca Quilt'); ?></h2>
 	
 			<figure class="product-image">
-				<a href="http://www.creswickwool.com/alpaca-pillow-luxury-twin-pack.html">
+				<a href="<?= $base_url ?>alpaca-pillow-luxury-twin-pack.html">
 					<img src="src/img/regal_quilt_1.jpg" alt="" />
 				</a>
 			</figure>
@@ -128,10 +129,10 @@ Australian Made'));
 	
 	
 		<article id="alpaca-luxury-quilt" data-product-id="9699">
-			<h2 class="product-name" data-product-uri="//www.creswickwool.com/alpaca-pillow-luxury-twin-pack.html"><?= _('Alpaca Luxury Quilt'); ?></h2>
+			<h2 class="product-name" data-product-uri="<?= $base_url ?>alpaca-pillow-luxury-twin-pack.html"><?= _('Alpaca Luxury Quilt'); ?></h2>
 	
 			<figure class="product-image">
-				<a href="http://www.creswickwool.com/alpaca-pillow-luxury-twin-pack.html">
+				<a href="<?= $base_url ?>alpaca-pillow-luxury-twin-pack.html">
 					<img src="src/img/2_pillow_pack.jpg" alt="" />
 				</a>
 			</figure>
@@ -193,7 +194,7 @@ Australian made
 
 	<div id="cart-message" role="alert" hidden="hidden">
 		<p><?= _('Product added to cart') ?></p>
-		<a href="http://www.creswickwool.com/checkout/cart" class="add btn"><?= _('View cart'); ?></a>
+		<a href="<?= $base_url ?>checkout/cart" class="add btn"><?= _('View cart'); ?></a>
 	</div>
 
 
@@ -229,7 +230,7 @@ Australian made
 
 	<footer id="bottom">
 		<div id="secure-shopping"><span><?= _('Secure Shopping'); ?></span></div>
-		<a id="full-website" href="http://www.creswickwool.com.au"><span><?= _('Full Website'); ?> <small>www.creswickwool.com.au</small></span></a>
+		<a id="full-website" href="http://www.creswickwool.com.au/"><span><?= _('Full Website'); ?> <small>www.creswickwool.com.au</small></span></a>
 		<div id="natural-fibres"><span><?= _('Natural Fibres'); ?></span></div>
 	</footer>
 
