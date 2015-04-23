@@ -171,7 +171,7 @@
 
 		req.open("POST", "api.php");
 		req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-		req.send("action=add_to_cart&product_id="+productID+"&quantity="+Math.min(1, quantity));
+		req.send("action=add_to_cart&product_id="+productID+"&quantity="+Math.min(1, quantity)+"&size="+(size||1));
 	}
 	/** Debounce addProduct so clicking/tapping too quickly won't add multiple products. */
 	.debounce(1000, true),

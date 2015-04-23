@@ -62,7 +62,8 @@ if($_POST['action'] === 'add_to_cart'){
 
 
 	try{
-		$product_id		=	$_POST['product_id'];
+        $size           =   $_POST['size'];
+		$product_id		=	$product_ids[$_POST['product_id']][$size];
 		$quantity		=	$_POST['quantity'];
 
 		$cart->addProduct($product_id, array('qty' => $quantity));
