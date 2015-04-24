@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-04-22 12:09+1000\n"
-"PO-Revision-Date: 2015-04-22 12:10+1000\n"
+"POT-Creation-Date: 2015-04-24 15:21+1000\n"
+"PO-Revision-Date: 2015-04-24 15:21+1000\n"
 "Last-Translator: John Gardner <gardnerjohng@gmail.com>\n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -15,96 +15,77 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: /Users/johngardner/Jobs/CreswickWool-LandingPage\n"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:32
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:50
-msgid "Creswick Woollen Mills"
-msgstr "Creswick Woollen Mills"
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:51
-msgid ""
-"Creswick Woollen Mills is the home of luxurious, natural fibre products "
-"designed in Australia. Founded in 1947 Creswick Woollen Mills is now the "
-"only coloured woollen spinning mill of its kind in Australia."
-msgstr ""
-"珂莱斯威克澳毛纺织集团（Creswick Woollen Mills) 是澳洲高贵，奢华天然纤维产品"
-"之家。集团成立于1947年，在澳洲享有很高盛誉并且是澳洲最后一座具有染色能力的澳"
-"毛纺织企业。"
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:52
-msgid ""
-"Creswick has six stores across Victoria, Australia and stocks many of its "
-"products in the famous Australian department store David Jones."
-msgstr ""
-"在澳洲，珂莱斯威克旗下的六家直营店遍布整个维多利亚州。我们也是澳大利亚著名高"
-"档百货公司--David Jones的特约供货商。我们长期供应给David Jones许多豪华系列产"
-"品。"
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:59
-msgid "Pure Regal Alpaca Quilt"
-msgstr "极品羊驼被"
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:68
-msgid "Regular price: <s>$499</s>"
-msgstr "商场零售价：<s>$499</s>"
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:69
-msgid "Special price: $388"
-msgstr "特价：$388"
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:80
+#. translators: The %s gets replaced with the size the user's chosen.
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/func.php:43
 #, php-format
 msgid "Your size: %s"
 msgstr "你的尺寸：%s"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:82
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:153
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/func.php:45
 msgid "Pick your size:"
 msgstr "选择你的尺寸："
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:86
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:157
-msgid "Single"
-msgstr "单人码"
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:87
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:158
-msgid "Double"
-msgstr "双人码"
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:88
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:159
-msgid "Queen"
-msgstr "皇后码"
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:89
-msgid "Chinese Queen"
-msgstr "国王码"
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:90
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:160
-msgid "King"
-msgstr "亚洲皇后码"
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:91
-msgid "Chinese King"
-msgstr "亚洲国王码"
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:92
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:161
-msgid "Super King"
-msgstr "加大码"
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:96
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:165
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/func.php:61
 msgid "Quantity:"
 msgstr "数量："
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:97
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:166
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/func.php:62
 msgid "Add to bag"
 msgstr "添加到购物篮"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:102
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/func.php:79
+msgid "Sizing Guide"
+msgstr "尺寸指南"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/func.php:80
+msgid "Comes in the following sizes:"
+msgstr "我们有以下尺寸："
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/func.php:82
+msgid ":"
+msgstr "："
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:6
+msgid "Single"
+msgstr "单人码"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:7
+msgid "Double"
+msgstr "双人码"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:8
+msgid "Queen"
+msgstr "皇后码"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:9
+msgid "Chinese Queen"
+msgstr "国王码"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:10
+msgid "King"
+msgstr "亚洲皇后码"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:11
+msgid "Chinese King"
+msgstr "亚洲国王码"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:12
+msgid "Super King"
+msgstr "加大码"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:20
+msgid "Pure Regal Alpaca Quilt"
+msgstr "极品羊驼被"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:24
+msgid "Regular price: <s>$499</s>"
+msgstr "商场零售价：<s>$499</s>"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:25
+msgid "Special price: $388"
+msgstr "特价：$388"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:26
 msgid ""
 "500 GSM\n"
 "100% alpaca\n"
@@ -114,12 +95,12 @@ msgstr ""
 "100%羊驼含量\n"
 "澳大利亚制造"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:107
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:30
 msgid ""
 "Pure alpaca regal quilts offer warmth without weight when compared to wool."
 msgstr "极品羊驼毛被很轻柔，温暖而没有重量感。"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:108
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:31
 msgid ""
 "An innovation in luxury quilts, Creswick's pure alpaca regal quilt features "
 "a new and exclusive quilting design which creates the softest, smoothest and "
@@ -133,100 +114,52 @@ msgstr ""
 "潮、耐寒、柔软、透气、弹性好、膨松度经久不衰，卓越的保暖性能和多项对你有益的"
 "产品特征。"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:111
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:178
-msgid "Sizing Guide"
-msgstr "尺寸指南"
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:112
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:179
-msgid "Comes in the following sizes:"
-msgstr "我们有以下尺寸："
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:114
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:181
-msgid "Single:"
-msgstr "单人码："
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:114
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:181
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:36
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:65
 msgid "140cm × 210cm"
 msgstr "140㎝ × 210㎝"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:115
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:182
-msgid "Double:"
-msgstr "双人码："
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:115
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:182
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:37
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:66
 msgid "180cm × 210cm"
 msgstr "180㎝ × 210㎝"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:116
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:183
-msgid "Queen:"
-msgstr "皇后码："
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:116
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:183
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:38
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:67
 msgid "210cm × 210cm"
 msgstr "210㎝ × 210㎝"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:117
-msgid "Chinese Queen:"
-msgstr "国王码："
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:117
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:39
 msgid "230cm × 200cm"
 msgstr "230㎝ × 200㎝"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:118
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:184
-msgid "King:"
-msgstr "亚洲皇后码："
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:118
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:184
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:40
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:68
 msgid "245cm × 210cm"
 msgstr "245㎝ × 210㎝"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:119
-msgid "Chinese King:"
-msgstr "亚洲国王码："
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:119
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:41
 msgid "240cm × 220cm"
 msgstr "240㎝ × 220㎝"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:120
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:185
-msgid "Super King:"
-msgstr "加大码："
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:120
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:185
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:42
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:69
 msgid "240cm × 270cm"
 msgstr "240㎝ × 270㎝"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:131
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:51
 msgid "Alpaca Luxury Quilt"
 msgstr "豪华羊驼被"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:140
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:55
 msgid "Regular price: <s>$379</s>"
 msgstr "商场零售价：<s>$379</s>"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:141
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:56
 msgid "Special price: $258"
 msgstr "特价：$258"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:151
-#, php-format
-msgid "Your Size: %s"
-msgstr "你的尺寸：%s"
-
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:172
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:57
 msgid ""
 "50% Alpaca and 50% Wool\n"
 "Australian made\n"
@@ -236,7 +169,7 @@ msgstr ""
 "50％羊驼 50％羊毛\n"
 "澳大利亚制造"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:175
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/inc/products.php:61
 msgid ""
 "The Creswick Woollen Mills alpaca and wool quilt is the ultimate in sleeping "
 "luxury. With 50% alpaca and 50% wool fleece encased in a sateen fabric of "
@@ -250,19 +183,47 @@ msgstr ""
 "柔软性，舒适性，温暖性又彰显豪华。在夜晚，这种特殊罕见的纤维会让你享受完美的"
 "睡眠。"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:195
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:11
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:33
+msgid "Creswick Woollen Mills"
+msgstr "Creswick Woollen Mills"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:34
+msgid ""
+"Creswick Woollen Mills is the home of luxurious, natural fibre products "
+"designed in Australia. Founded in 1947 Creswick Woollen Mills is now the "
+"only coloured woollen spinning mill of its kind in Australia."
+msgstr ""
+"珂莱斯威克澳毛纺织集团（Creswick Woollen Mills) 是澳洲高贵，奢华天然纤维产品"
+"之家。集团成立于1947年，在澳洲享有很高盛誉并且是澳洲最后一座具有染色能力的澳"
+"毛纺织企业。"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:35
+msgid ""
+"Creswick has six stores across Victoria, Australia and stocks many of its "
+"products in the famous Australian department store David Jones."
+msgstr ""
+"在澳洲，珂莱斯威克旗下的六家直营店遍布整个维多利亚州。我们也是澳大利亚著名高"
+"档百货公司--David Jones的特约供货商。我们长期供应给David Jones许多豪华系列产"
+"品。"
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:50
 msgid "Product added to cart"
 msgstr "添加产品到购物车"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:196
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:51
 msgid "View cart"
 msgstr "查看购物车"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:203
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:55
+msgid "Product could not be added to cart"
+msgstr ""
+
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:62
 msgid "About"
 msgstr "Creswick简介"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:204
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:63
 msgid ""
 "Located in Creswick, a small country township approximately 120km from "
 "Melbourne, only 20 minutes north-east of Ballarat and 20 minutes south-east "
@@ -278,7 +239,7 @@ msgstr ""
 "于持续的研究与创新，以及独特的设计创意和高品质。为了拓展集团的新旅游基础设施"
 "的开发与建设，珂莱斯威克集团目前对该项目投资已过300百万人民币。"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:205
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:64
 msgid ""
 "Visit Creswick Woollen Mills to see where the products are manufactured and "
 "visit with our friendly alpacas."
@@ -286,35 +247,35 @@ msgstr ""
 "我们热烈邀请你来参观珂莱斯威克羊毛纺织集团，亲眼见证澳洲制造业的情况，零距离"
 "接触可爱的羊驼。"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:207
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:66
 msgid "Contact details for the Mill:"
 msgstr "联系方式："
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:208
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:67
 msgid "Phone: 03 5345 2202"
 msgstr "电话: 0061-03- 5345 2202；0061-03-98185055"
 
 #. translators: %s gets replaced with a hyperlinked e-mail address
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:212
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:71
 #, php-format
 msgid "Email: %s"
 msgstr "电子邮件: %s"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:221
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:80
 msgid "Delivery and Returns"
 msgstr "配送及退货"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:222
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:81
 msgid "We accept international orders."
 msgstr "我们接受国际订单。"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:223
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:82
 msgid ""
 "<strong>Orders shipped overseas are exempt from GST charges (this will be "
 "deducted at the checkout).</strong>"
 msgstr "运往海外订单免收10%的消费税GST（结账时自动扣除）。"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:224
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:83
 msgid ""
 "Orders are sent via International Post Courier and are registered. Please "
 "allow up to 10 working days for orders to be received after a 48-hour "
@@ -325,7 +286,7 @@ msgstr ""
 "作日之内收到你的货品。</p><p>当海外订单到达目的地国家时，只能在当地国家跟踪查"
 "询。"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:225
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:84
 msgid ""
 "We hope you will be delighted with your Creswick Woollen Mills purchase. If "
 "for some reason you are unsatisfied with your purchase from the Creswick "
@@ -335,37 +296,61 @@ msgstr ""
 "我们预祝你在珂莱斯威克购物愉快。如果因故你不满意在Creswick Woollen Mills网站"
 "购买的产品，我们将按照我们的退货及换货政策乐意为你更换或者退款。"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:231
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:90
 msgid "Secure Shopping"
 msgstr "安全采购"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:232
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:91
 msgid "Full Website"
 msgstr "我们官方购物网"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:233
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:92
 msgid "Natural Fibres"
 msgstr "天然纤维"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:238
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:97
 msgid "Keep in touch"
 msgstr "请与我们保持联系"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:239
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:98
 msgid "Subscribe right away and you will receive our news everyday!"
 msgstr "马上注册你的电子邮件，你会在第一时间收到我们的新闻和优惠活动！"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:241
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:100
 msgid "Put your email address here"
 msgstr "请把你的电子邮件写在这里"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:242
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:101
 msgid "Subscribe"
 msgstr "订阅"
 
-#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:247
+#: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:106
 msgid "Australian Made"
 msgstr "澳洲制造"
+
+#~ msgid "Single:"
+#~ msgstr "单人码："
+
+#~ msgid "Double:"
+#~ msgstr "双人码："
+
+#~ msgid "Queen:"
+#~ msgstr "皇后码："
+
+#~ msgid "Chinese Queen:"
+#~ msgstr "国王码："
+
+#~ msgid "King:"
+#~ msgstr "亚洲皇后码："
+
+#~ msgid "Chinese King:"
+#~ msgstr "亚洲国王码："
+
+#~ msgid "Super King:"
+#~ msgstr "加大码："
+
+#~ msgid "Your Size: %s"
+#~ msgstr "你的尺寸：%s"
 
 #~ msgid ""
 #~ "The Creswick Woollen Mills alpaca and wool quilt is the ultimate in "
