@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2015-04-24 15:21+1000\n"
-"PO-Revision-Date: 2015-04-24 15:21+1000\n"
+"PO-Revision-Date: 2015-04-27 08:50+1000\n"
 "Last-Translator: John Gardner <gardnerjohng@gmail.com>\n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -217,7 +217,7 @@ msgstr "查看购物车"
 
 #: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:55
 msgid "Product could not be added to cart"
-msgstr ""
+msgstr "产品不能 被 添 加 到 购 物 车"
 
 #: /Users/johngardner/Jobs/CreswickWool-LandingPage/index.php:62
 msgid "About"
