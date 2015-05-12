@@ -50,7 +50,7 @@ Australian Made'),
 			'slug'		=>	'alpaca-luxury-quilt',
 			'name'		=>	_('Alpaca Luxury Quilt'),
 			'permalink'	=>	$base_url.'alpaca-pillow-luxury-twin-pack.html',
-			'image'		=>	'src/img/2_pillow_pack.jpg',
+			'image'		=>	'src/img/alux_quilt.jpg',
 			
 			'price_1'	=>	_('Regular price: <s>$379</s>'),
 			'price_2'	=>	_('Special price: $258'),
