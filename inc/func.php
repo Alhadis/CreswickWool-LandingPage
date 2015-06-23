@@ -40,9 +40,9 @@
 					<label class="disclosure" for="mode-<?= $count ?>" data-text-selected="<?=
 
 						# translators: The %s gets replaced with the size the user's chosen.
-						_('Your size: %s');
+						__('Your size: %s');
 
-					?>"><?= _('Pick your size:') ?></label>
+					?>"><?= __('Pick your size:') ?></label>
 
 
 					<ul class="fold choices"><?php
@@ -58,8 +58,8 @@
 					</ul>
 				</div>
 
-				<label class="matchstick"><?= _('Quantity:'); ?> <input type="number" class="quantity-field" step="1" min="1" value="1" /></label>
-				<a href="#" class="add btn"><?= _('Add to bag'); ?></a>
+				<label class="matchstick"><?= __('Quantity:'); ?> <input type="number" class="quantity-field" step="1" min="1" value="1" /></label>
+				<a href="#" class="add btn"><?= __('Add to bag'); ?></a>
 			</div>
 	
 	
@@ -76,10 +76,10 @@
 
 
 				<div class="sizing-guide">
-					<h3><?= _('Sizing Guide'); ?></h3>
-					<p><?= _('Comes in the following sizes:'); ?></p>
+					<h3><?= __('Sizing Guide'); ?></h3>
+					<p><?= __('Comes in the following sizes:'); ?></p>
 					<dl><?php foreach($sizes as $size_id => $size_info): ?> 
-						<dt><?= sprintf('%1$s%2$s', $size_names[$size_id], _(':')); ?></dt><dd><?= $size_info['spec']; ?></dd><?php
+						<dt><?= sprintf('%1$s%2$s', $size_names[$size_id], __(':')); ?></dt><dd><?= $size_info['spec']; ?></dd><?php
 						endforeach; ?> 
 					</dl>
 				</div>
@@ -87,13 +87,56 @@
 		</article>
 		<?php
 	}
+	
+	
+	
+	/**
+	 * Generates a string from an array of codepoints.
+	 *
+	 * Intended for fragile server environments where encoding and gettext support are uncertain
+	 * or highly dubious.
+	 *
+	 * @param array $codepoints
+	 * @return string
+	 */
+	function str_by_codepoints($codepoints = array()){
+		$output	=	'';
+		$count	=	count($codepoints);
+		for($i = 0; $i < $count; ++$i){
+			$ascii	=	$codepoints[$i];
+			$output	.=	mb_convert_encoding('&#' . intval($ascii) . ';', 'UTF-8', 'HTML-ENTITIES');
+		}
+		return $output;
+	}
 
 
+
+
+
+	/**
+	 * Hacky, last-minute compromise for temperamental servers lacking apparent gettext support.
+	 *
+	 * @param string $i - Input string
+	 * @return string
+	 */
+	function __($i){
+		global $locale;
+
+		if(!isset($GLOBALS[$locale])){
+			$cwd	=	getcwd();
+			chdir(dirname(__FILE__));
+			include_once '../src/lang/'.$locale.'/LC_MESSAGES/messages.php';
+			chdir($cwd);
+		}
+
+		$codepoints	=	$GLOBALS[$locale][$i];
+		return isset($codepoints) ? str_by_codepoints($codepoints) : $i;
+	}
 
 
 	/** Always make sure gettext's shorthand function is available, even if it's not available to the running system */
 	if(!function_exists('_')){
-		function _($i){ return $i; }
+		function __($i){ return __($i); }
 	}
 	
 	
